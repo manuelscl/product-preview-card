@@ -13,7 +13,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./design/product-preview-card-desktop.png)
 
 ### Links
 
