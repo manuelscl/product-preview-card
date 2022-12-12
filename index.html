@@ -22,18 +22,24 @@
             height: 100vh;
             display: flex;
             justify-content: center;
+            align-items: center;
             background: hsl(30, 38%, 92%);
             padding: 20px 15px;
         }
         .product-card-container {
             max-width: 375px;
             height: fit-content;
+            display: flex;
+            flex-direction: column;
             background: hsl(0, 0%, 100%);
             border-radius: 8px;
             overflow: hidden;
         }
         .product-card-image img {
             width: 100%;
+        }
+        .product-card-image img:nth-child(2) {
+            display: none;
         }
         .product-content {
             padding: 20px;
@@ -97,6 +103,47 @@
         .btn-addToCart svg {
             margin-right: 10px;
         }
+
+        /* Credits */
+        .attribution {
+            display: none;
+            position: absolute;
+            bottom: 20px;
+        }
+
+        @media (min-width: 960px) {
+            .product-card-container {
+                max-width: 650px;
+                height: 450px;
+                flex-direction: row;
+            }
+            .product-card-image img:nth-child(1) {
+                display: none;
+            }
+            .product-card-image img:nth-child(2) {
+                display: block;
+            }
+            .product-content {
+                width: 85%;
+                padding: 40px 40px;
+            }
+            .product-title {
+                padding: 0 30px 0 0;
+            }
+            .attribution {
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                bottom: 20px;
+            }
+            .attribution a {
+                margin-left: 6px;
+                font-weight: bold;
+            }
+            .attribution a:visited {
+                color: hsl(158, 36%, 37%);
+            }
+        }
     </style>
 </head>
 <body>
@@ -105,6 +152,7 @@
             <div class="product-card-container">
                 <div class="product-card-image">
                     <img src="./images/image-product-mobile.jpg" alt="Imagen de un Perfume CHANEL">
+                    <img src="./images/image-product-desktop.jpg" alt="Imagen de un Perfume CHANEL">
                 </div>
                 <div class="product-content">
                     <p class="product-name">Perfume</p>
@@ -122,11 +170,11 @@
                     </button>
                 </div>
             </div>
+            <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io/profile/manuelscl" target="_blank">Frontend Mentor</a>. 
+                Coded by<a href="https://github.com/manuelscl/product-preview-card" target="_blank">Manuelscl</a>.
+            </div>
         </section>
-        <!-- <div class="attribution">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-            Coded by <a href="#">Your Name Here</a>.
-        </div> -->
     </main>
 </body>
 </html>
