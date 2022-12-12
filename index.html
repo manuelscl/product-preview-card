@@ -26,17 +26,59 @@
             display: flex;
             justify-content: center;
             background: hsl(30, 38%, 92%);
-            padding: 40px 0;
+            padding: 40px 20px;
         }
         .product-card-container {
-            width: 400px;
+            max-width: 375px;
+            background: hsl(0, 0%, 100%);
         }
         .product-card-image img {
             width: 100%;
         }
+        .product-content {
+            padding: 20px;
+        }
+        .product-name {
+            font-size: 13.5px;
+            font-weight: 500;
+            letter-spacing: 3px;
+            color: hsl(228, 12%, 48%);
+            text-transform: uppercase;
+        }
+        .product-title {
+            font-size: 30px;
+            font-family: 'Fraunces', serif;
+            color: hsl(212, 21%, 14%);
+        }
+        .product-description {
+            font-size: 14px;
+            color:hsl(228, 12%, 48%);
+            line-height: 24px;
+        }
+        .prices p:nth-child(1){
+            font-size: 28px;
+            font-weight: 700;
+            font-family: 'Fraunces', serif;
+            color: hsl(158, 36%, 37%);
+        }
+        .prices p:nth-child(2) {
+            font-size: 14px;
+            color:hsl(228, 12%, 48%);
+            text-decoration: line-through;
+        }
+        .btn-addToCart {
+            width: 100%;
+            font-size: 18px;
+            padding: 14px 0;
+            background:hsl(158, 36%, 37%);
+            color:hsl(0, 0%, 100%);
+            border: none;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
+
     <main>
         <section class="container">
             <div class="product-card-container">
@@ -64,6 +106,6 @@
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
             Coded by <a href="#">Your Name Here</a>.
         </div> -->
-    </main>
+    </main>    
 </body>
 </html>
